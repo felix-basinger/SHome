@@ -1,0 +1,15 @@
+@media (max-width: 1270px) {
+    .wrapper {
+        padding-bottom: 60px;
+        max-width: 1000px;
+        width: 100%;
+        position: relative;
+    }
+
+    .card .car-img img {
+        width: 320px;
+        height: 220px;
+        transition: 1s;
+        object-fit: cover;
+    }
+}

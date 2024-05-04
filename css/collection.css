@@ -1,0 +1,396 @@
+@import "css/reset.css"; 
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap');
+
+body {
+    font-family: "El Messiri", sans-serif;
+    background-color: #302E2C;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: #1E1C1B;
+    padding: 5px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.header a img {
+    width: 48px;
+    height: 48px;
+}
+
+.nav {
+    float: right;
+    padding-top: 15px;
+}
+
+.nav ul {
+    display: flex;
+
+}
+
+.nav ul li {
+    padding-left: 25px;
+}
+
+.nav ul li a {
+    color: #ffffff;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.nav ul li a:hover {
+    color: #7e7e7e;
+}
+
+
+
+.projects-header-main {
+    background-image: url('../static/img/JUNGLE panel 6.jpg');
+    width: 100vw;
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.projects-header-main .projects-head-text {
+    color: #ffffff;
+    padding-top: 110px;
+    width: 770px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.projects-header-main .projects-head-text .projects-head {
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.projects-header-main .projects-head-text .projects-par {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+
+.guys {
+    padding: 50px 0;
+    padding-left: 100px;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    background-color: #302E2C;
+}
+
+.guys .img-guys .photo-guys {
+    /* margin: 0 auto; */
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+}
+
+.info-guys {
+    /* width: 65%; */
+    /* margin: 0 auto;
+    margin-left: 0; */
+    padding: 0 100px;
+}
+
+.info-guys .logo-guys {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.info-guys .guys-text {
+    padding-top: 130px;
+    font-size: 18px;
+    /* margin: 0 auto; */
+    color: #ffffff;
+    max-width: 900px;
+    text-align: justify;
+}
+
+
+
+
+
+
+.container {
+    color: #ffffff;
+    margin: 0 auto;
+}
+
+  .slider {
+    margin-bottom: 30px;
+    position: relative;
+  }
+  .slider .owl-item.active.center .slider-card {
+    transform: scale(1.15);
+    opacity: 1;
+    
+  }
+  .slider-card {
+    padding: 0px 0px;
+    margin: 50px 15px;  
+    transform: scale(0.9);
+    opacity: 0.5;
+    transition: all 0.3s;
+  }
+  
+  .slider-card img {
+    width: 450px;
+    height: 300px;
+    object-fit: cover;
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.5);
+    transition: 1s;
+  }
+
+  .slider-card img:hover {
+    transform: scale(1.05);
+  }
+  .owl-nav .owl-prev {
+    position: absolute;
+    top: calc(50% - 25px);
+    left: 0;
+    opacity: 1;
+    font-size: 30px !important;
+    z-index: 1;
+  }
+  .owl-nav .owl-next {
+    position: absolute;
+    top: calc(50% - 25px);
+    right: 0;
+    opacity: 1;
+    font-size: 30px !important;
+    z-index: 1;
+  }
+  
+.text-center {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.text-par {
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.text-par p {
+    font-size: 18px;
+}
+
+
+
+
+
+
+.creator {
+    padding: 50px;
+    background-color: #C2B4A6;
+    color: #000;
+}
+
+.creator-text {
+    margin: 0 auto;
+    width: 600px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.creator-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+}
+
+.creator-img img{
+    width: 270px;
+    height: 300px;
+    object-fit: cover;
+}
+
+
+
+
+.wrap-contacts {
+    background-color: #302E2C;
+    color: #ffffff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+}
+
+.wrap-contacts .contacts-info {
+    padding-top: 15px;
+    padding-left: 70px;
+    width: 30%;
+}
+
+.wrap-contacts .contacts-info .contact-header h1{
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.wrap-contacts .contacts-info .contact-text {
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+.wrap-contacts .contacts-info .contact-text p {
+    margin-bottom: 0;
+}
+
+.wrap-contacts .contacts-info .social-icons {
+    padding-top: 20px;
+    display: flex;
+    gap: 15px;
+
+}
+.wrap-contacts .contacts-info .social-icons img {
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
+
+.email-form {
+    padding: 25px;
+}
+
+.inside-form {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    width: 900px;
+    height: 200px;
+    padding-top: 10px;
+}
+
+.all_form {
+    padding-bottom: 10px;
+}
+
+.cont-us {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.send_form {
+    padding-top: 10px;
+}
+
+.data_block {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+}
+
+input {
+    background: transparent;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    font-size: 14px;
+    color: #fff;
+    font-family: 'El Messiri', sans-serif;
+    caret-color: #fff;
+    width: 200px;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::placeholder {
+    font-size: 14px;
+    color:#fff
+}
+
+input:focus::placeholder {
+    color:#fff
+}
+
+.text_area {
+    width: 490px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    margin-left: 60px; 
+}
+
+.message {
+    margin: 0;
+}
+
+textarea {
+    font-family: 'El Messiri', sans-serif;
+    background: transparent;
+    border: none;
+    height: 19px;
+    font-size: 14px;
+    color: #fff;
+    width: 477px;
+    caret-color: #fff;
+    resize: none;
+}
+
+textarea {
+    outline: none;
+}
+
+textarea::placeholder {
+    color: #fff;
+    font-family: 'El Messiri', sans-serif;
+}
+
+.textarea:focus::placeholder {
+    color:#fff;
+}
+
+.send_butt {
+    display: flex;
+    padding-top: 25px;
+    column-gap: 120px;
+}
+
+.send {
+    padding-top: 10px;
+}
+
+.send_button {
+    font-family: 'El Messiri', sans-serif;
+    width: 172px;
+    height: 40px; 
+      /* Отступы внутри кнопки */
+    border: 1px solid #d6d6d6; /* Белая граница кнопки */
+    border-radius: 25px; /* Закругление углов кнопки */
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 14px;
+    text-align: center; /* Выравнивание текста по центру */
+    text-decoration: none; /* Убираем подчеркивание текста */
+    cursor: pointer; /* Форма курсора как у кнопки */
+    transition: background-color 0.3s, color 0.3s;
+    color: #fff;
+    
+}
+
+.send_button:hover {
+    background-color: #d6d6d6; /* Белый фон при наведении */
+    color: #000; /* Черный цвет текста при наведении */
+}
+
+.result {
+    padding-left: 5px;
+}

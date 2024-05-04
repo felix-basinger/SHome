@@ -1,0 +1,504 @@
+@import "css/reset.css";
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap');
+
+body {
+    font-family: "El Messiri", sans-serif;
+    background-image: url("../static/img/IMG_FON.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    max-width: 1440px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+/*  Header  */
+
+.header {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: #1E1C1B;
+    padding: 5px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.header a img {
+    width: 48px;
+    height: 48px;
+}
+
+.nav {
+    float: right;
+}
+
+.nav ul {
+    display: flex;
+
+}
+
+.nav ul li {
+    padding-left: 25px;
+}
+
+.nav ul li a {
+    color: #ffffff;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.nav ul li a:hover {
+    color: #7e7e7e;
+}
+
+
+/*  Header content   */
+
+.header-row {
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+
+}
+
+.header-content {
+    margin-top: 100px;
+    max-width: 620px;
+    text-align: justify;
+    font-size: 16px;
+}
+
+.header-heading {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 60px;
+}
+
+.images-text {
+    background-color: #C2B4A6;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rectangle {
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, .5);
+    margin-top: 100px;
+    width: 1200px;
+    height: 360px;
+    /* border: 2px solid; */
+    color: black;
+    display: flex;
+}
+
+
+.text-in-rec {
+    margin-top: 100px;
+    margin-left: 50px;
+    max-width: 600px;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.header-in-rec {
+    font-size: 35px;
+    padding-bottom: 10px;
+    color: #ffffff;
+    font-weight: 600;
+    text-shadow: #000 0px 0px 3px;
+    padding-bottom: 30px;
+}
+
+
+
+.slider {
+    width: 480px;
+    height: 360px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-img {
+    width: 480px;
+    height: 380px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.slider-img.active {
+    opacity: 1;
+}
+
+.slider img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.slider .prev {
+    left: 10px;
+}
+
+.slider .next {
+    right: 10px;
+}
+
+
+
+
+.mini-slider-all-2 {
+    width: 100%;
+}
+
+.slider-2 {
+    width: 480px;
+    height: 360px;
+    position: relative;
+    overflow: hidden;
+    left: 70px;
+}
+
+.slider-img-2 {
+    width: 480px;
+    height: 380px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.slider-img-2.active {
+    opacity: 1;
+}
+
+.slider-2 img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.slider-2 .prev-2 {
+    left: 10px;
+}
+
+.slider-2 .next-2 {
+    right: 10px;
+}
+
+
+
+
+
+.slider-3 {
+    width: 480px;
+    height: 360px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-img-3 {
+    width: 480px;
+    height: 380px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.slider-img-3.active {
+    opacity: 1;
+}
+
+.slider-3 img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.slider-3 .prev-3 {
+    left: 10px;
+}
+
+.slider-3 .next-3 {
+    right: 10px;
+}
+
+
+
+.middle-text {
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 22px;
+    max-width: 900px;
+    text-align: center;
+    text-shadow: #000 0px 0 3px;
+}
+
+
+
+.wrapper {
+    padding-bottom: 60px;
+    max-width: 1200px;
+    width: 100%;
+    position: relative;
+}
+
+.wrapper .carousel {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    gap: 19px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: 0;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.wrapper i {
+    height: 50px;
+    width: 50px;
+    background: #ffffff;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    font-size: 1.25rem;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .23);
+}
+
+.wrapper i:first-child {
+    top: 160px;
+    left: -24px;
+    z-index: 5;
+}
+
+.wrapper i:last-child {
+    top: 160px;
+    right: -24px;
+    z-index: 5;
+}
+
+.carousel .card {
+    scroll-snap-align: start;
+    cursor: pointer;
+}
+
+.carousel.no-transition {
+    scroll-behavior: auto;
+}
+
+.carousel.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+}
+
+.carousel.dragging .card {
+    cursor: grab;
+    user-select: none;
+}
+
+.card .car-img img {
+    width: 390px;
+    height: 290px;
+    transition: 1s;
+    object-fit: cover;
+}
+
+.card .car-img img:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+.wrap-contacts {
+    background-color: #302E2C;
+    color: #ffffff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+}
+
+.wrap-contacts .contacts-info {
+    padding-left: 70px;
+    width: 30%;
+}
+
+.wrap-contacts .contacts-info .contact-header h1{
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.wrap-contacts .contacts-info .contact-text {
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+.wrap-contacts .contacts-info .social-icons {
+    padding-top: 20px;
+    display: flex;
+    gap: 15px;
+
+}
+.wrap-contacts .contacts-info .social-icons img {
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
+
+.email-form {
+    padding: 25px;
+}
+
+.inside-form {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    width: 900px;
+    height: 200px;
+    padding-top: 10px;
+}
+
+.all_form {
+    padding-bottom: 10px;
+}
+
+.cont-us {
+    text-align: center;
+}
+
+.send_form {
+    padding-top: 10px;
+}
+
+.data_block {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+}
+
+input {
+    background: transparent;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    font-size: 14px;
+    color: #fff;
+    font-family: 'El Messiri', sans-serif;
+    caret-color: #fff;
+    width: 200px;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::placeholder {
+    font-size: 14px;
+    color:#fff
+}
+
+input:focus::placeholder {
+    color:#fff
+}
+
+.text_area {
+    width: 490px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    margin-left: 60px; 
+}
+
+.message {
+    margin: 0;
+}
+
+textarea {
+    font-family: 'El Messiri', sans-serif;
+    background: transparent;
+    border: none;
+    height: 19px;
+    font-size: 14px;
+    color: #fff;
+    width: 477px;
+    caret-color: #fff;
+    resize: none;
+}
+
+textarea {
+    outline: none;
+}
+
+textarea::placeholder {
+    color: #fff;
+    font-family: 'El Messiri', sans-serif;
+}
+
+.textarea:focus::placeholder {
+    color:#fff;
+}
+
+.send_butt {
+    display: flex;
+    padding-top: 25px;
+    column-gap: 120px;
+}
+
+.send {
+    padding-top: 10px;
+}
+
+.send_button {
+    font-family: 'El Messiri', sans-serif;
+    width: 172px;
+    height: 40px; 
+      /* Отступы внутри кнопки */
+    border: 1px solid #d6d6d6; /* Белая граница кнопки */
+    border-radius: 25px; /* Закругление углов кнопки */
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 14px;
+    text-align: center; /* Выравнивание текста по центру */
+    text-decoration: none; /* Убираем подчеркивание текста */
+    cursor: pointer; /* Форма курсора как у кнопки */
+    transition: background-color 0.3s, color 0.3s;
+    color: #fff;
+    
+}
+
+.send_button:hover {
+    background-color: #d6d6d6; /* Белый фон при наведении */
+    color: #000; /* Черный цвет текста при наведении */
+}
