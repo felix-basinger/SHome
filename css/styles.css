@@ -86,6 +86,10 @@ body {
     color: #ffffff;
 }
 
+
+
+
+
 .about-us {
     display: flex;
 }
@@ -100,7 +104,7 @@ body {
 .info .about-header {
     font-size: 30px;
     font-weight: 600;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 .info .about-info {

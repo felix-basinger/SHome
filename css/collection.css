@@ -88,9 +88,15 @@ body {
 }
 
 .guys .img-guys .photo-guys {
+    padding-top: 10px;
     /* margin: 0 auto; */
     width: 400px;
     height: auto;
+     
+}
+
+.guys .img-guys .photo-guys img {
+    height: 590px;
     object-fit: cover;
 }
 
@@ -102,18 +108,26 @@ body {
 }
 
 .info-guys .logo-guys {
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     margin: 0 auto;
 }
 
 .info-guys .guys-text {
-    padding-top: 130px;
+    padding-top: 10px;
     font-size: 18px;
     /* margin: 0 auto; */
     color: #ffffff;
     max-width: 900px;
     text-align: justify;
+}
+
+.info-guys .guys-text p {
+    padding: 15px;
+}
+
+.info-guys .guys-text .low-guys-text {
+    padding-bottom: 0px;
 }
 
 
@@ -177,9 +191,9 @@ body {
 }
 
 .text-par {
-    width: 600px;
+    width: 1000px;
     margin: 0 auto;
-    text-align: center;
+    text-align: justify;
     padding-top: 10px;
 }
 

@@ -92,7 +92,7 @@ body {
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, .5);
     margin-top: 100px;
     width: 1200px;
-    height: 360px;
+    height: 400px;
     /* border: 2px solid; */
     color: black;
     display: flex;
@@ -100,35 +100,89 @@ body {
 
 
 .text-in-rec {
-    margin-top: 100px;
+    margin-top: 10px;
     margin-left: 50px;
     max-width: 600px;
     justify-content: center;
     align-items: center;
     text-align: justify;
+    font-size: 16px;
 }
 
 .header-in-rec {
+    text-align: center;
     font-size: 35px;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
     color: #ffffff;
     font-weight: 600;
     text-shadow: #000 0px 0px 3px;
-    padding-bottom: 30px;
 }
+
+.rec-list {
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.rec-text-2 {
+    font-size: 18px;
+}
+
+
+
+
+.container {
+    display: flex;
+    width: 720px;
+    height: 400px;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-y: auto; /* Позволяет вертикальную прокрутку */
+    padding: 0;
+}
+
+.column {
+    max-width: 300px;
+    flex: 1;
+    padding-right: 10px; /* Отступ между колонками */
+}
+
+.column-2 {
+    padding-left: 10px;
+    max-width: 300px;
+    flex: 1;
+    padding-right: 10px; /* Отступ между колонками */
+}
+
+.column:last-child {
+    padding-right: 0; /* Убираем отступ у последней колонки */
+}
+
+ol {
+    margin: 0;
+    padding-left: 20px; /* Отступ для нумерованного списка */
+    font-size: 13px; /* Уменьшение размера шрифта */
+    line-height: 1.2; /* Уменьшение межстрочного интервала */
+}
+
+li {
+    margin-bottom: 3px; /* Уменьшение нижнего отступа */
+}
+
 
 
 
 .slider {
     width: 480px;
-    height: 360px;
+    height: 400px;
     position: relative;
     overflow: hidden;
 }
 
 .slider-img {
     width: 480px;
-    height: 380px;
+    height: 400px;
     position: absolute;
     top: 0;
     left: 0;
@@ -164,7 +218,7 @@ body {
 
 .slider-2 {
     width: 480px;
-    height: 360px;
+    height: 400px;
     position: relative;
     overflow: hidden;
     left: 70px;
@@ -172,7 +226,7 @@ body {
 
 .slider-img-2 {
     width: 480px;
-    height: 380px;
+    height: 400px;
     position: absolute;
     top: 0;
     left: 0;
@@ -205,14 +259,14 @@ body {
 
 .slider-3 {
     width: 480px;
-    height: 360px;
+    height: 400px;
     position: relative;
     overflow: hidden;
 }
 
 .slider-img-3 {
     width: 480px;
-    height: 380px;
+    height: 400px;
     position: absolute;
     top: 0;
     left: 0;
