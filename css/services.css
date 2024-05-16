@@ -394,17 +394,22 @@ li {
 
 
 
-.wrap-contacts {
+
+.contacts {
     background-color: #302E2C;
+}
+
+.wrap-contacts {
+    margin: 0 auto;
     color: #ffffff;
     padding-top: 30px;
     padding-bottom: 30px;
     display: flex;
+    max-width: 1300px;
 }
 
 .wrap-contacts .contacts-info {
-    padding-left: 70px;
-    width: 30%;
+    width: 500px;
 }
 
 .wrap-contacts .contacts-info .contact-header h1{
@@ -433,7 +438,7 @@ li {
 
 
 .email-form {
-    padding: 25px;
+    padding-top: 20px;
 }
 
 .inside-form {
@@ -555,5 +560,9 @@ textarea::placeholder {
 .send_button:hover {
     background-color: #d6d6d6; /* Белый фон при наведении */
     color: #000; /* Черный цвет текста при наведении */
+}
+
+.result {
+    padding-left: 5px;
 }
 

@@ -83,8 +83,9 @@ body {
     padding-left: 100px;
     display: flex;
     justify-content: center;
-    max-width: 100%;
+    max-width: 1440px;
     background-color: #302E2C;
+    margin: 0 auto;
 }
 
 .guys .img-guys .photo-guys {
