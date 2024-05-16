@@ -88,15 +88,12 @@ body {
 }
 
 .guys .img-guys .photo-guys {
-    padding-top: 10px;
-    /* margin: 0 auto; */
-    width: 400px;
-    height: auto;
-     
+    
 }
 
 .guys .img-guys .photo-guys img {
-    height: 590px;
+    width: 390px;
+    height: 390px;
     object-fit: cover;
 }
 
@@ -227,32 +224,33 @@ body {
 }
 
 .creator-img img{
-    width: 270px;
-    height: 300px;
+    width: 380px;
+    height: 270px;
     object-fit: cover;
 }
 
 
 
+.contacts {
+    background-color: #302E2C;
+}
 
 .wrap-contacts {
-    background-color: #302E2C;
+    margin: 0 auto;
     color: #ffffff;
     padding-top: 30px;
     padding-bottom: 30px;
     display: flex;
+    max-width: 1300px;
 }
 
 .wrap-contacts .contacts-info {
-    padding-top: 15px;
-    padding-left: 70px;
-    width: 30%;
+    width: 500px;
 }
 
 .wrap-contacts .contacts-info .contact-header h1{
     font-size: 26px;
     font-weight: 600;
-    margin-bottom: 0;
 }
 
 .wrap-contacts .contacts-info .contact-text {
@@ -280,7 +278,7 @@ body {
 
 
 .email-form {
-    padding: 25px;
+    padding-top: 20px;
 }
 
 .inside-form {
@@ -296,7 +294,6 @@ body {
 
 .cont-us {
     text-align: center;
-    margin-bottom: 0;
 }
 
 .send_form {
