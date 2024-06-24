@@ -46,7 +46,7 @@ body {
 }
 
 .main-title {
-    background-image: url('../static/img/kamin.jpeg');
+    background-image: url('../static/IMG_7007 (1).JPG');
     margin: 0 auto;
     width: 100vw;
     height: 100vh;
@@ -77,13 +77,13 @@ body {
 .main-title .main-text .main-header h1{
     font-size: 80px;
     font-weight: 600;
-    color: #fff;
+    color: black;
 }
 
 .main-title .main-text .main-par p {
     font-size: 30px;
     font-weight: 500;
-    color: #ffffff;
+    color: black;
 }
 
 
@@ -245,6 +245,7 @@ body {
     margin: 0 auto;
     display: flex;
     max-width: 1250px;
+    padding-bottom: 30px;
 }
 
 .wrap-map .info-map {
@@ -255,11 +256,14 @@ body {
 }
 
 .wrap-map .info-map .map-text-2 {
-    padding-top: 70px;
+    max-width: 900px;
+    text-align: center;
+    padding-top: 60px;
+    font-size: 16px;
 }
 
 .wrap-map .map-img {
-    padding-top: 30px;
+    padding-top: 70px;
     padding-bottom: 30px;
     padding-left: 120px;
 }
@@ -314,7 +318,7 @@ body {
 
 
 .email-form {
-    padding-top: 20px;
+    padding-top: 45px;
 }
 
 .inside-form {
@@ -452,10 +456,12 @@ textarea::placeholder {
 
 
 /*-------------------------------Projects------------------------------*/
-
+ul, ul li {
+	list-style: none;
+}
 
 .projects-header-main {
-    background-image: url('../static/img/JUNGLE panel 6.jpg');
+    background-image: url('../static/IMG_7007.JPG');
     width: 100vw;
     height: 40vh;
     background-repeat: no-repeat;
@@ -464,7 +470,7 @@ textarea::placeholder {
 }
 
 .projects-header-main .projects-head-text {
-    color: #ffffff;
+    color: black;
     padding-top: 70px;
     width: 800px;
     margin: 0 auto;

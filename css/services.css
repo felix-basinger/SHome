@@ -3,10 +3,14 @@
 
 body {
     font-family: "El Messiri", sans-serif;
-    background-image: url("../static/img/IMG_FON.jpg");
+    /* background-image: url("../static/IMG_7007 (1).JPG");
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 }
+
+ul, ul li {
+	list-style: none;
+} 
 
 .container {
     max-width: 1440px;
@@ -59,17 +63,24 @@ body {
 /*  Header content   */
 
 .header-row {
-    color: #ffffff;
+    color: black;
     display: flex;
     justify-content: center;
-
+    background-image: url("../static/IMG_7007 (1).JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 85px;
 }
 
 .header-content {
-    margin-top: 100px;
+    margin-top: 110px;
     max-width: 620px;
     text-align: justify;
     font-size: 16px;
+}
+
+.header-content p {
+    font-size: 20px;
 }
 
 .header-heading {
@@ -81,7 +92,6 @@ body {
 
 .images-text {
     background-color: #C2B4A6;
-    margin-top: 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -443,7 +453,7 @@ li {
 
 
 .email-form {
-    padding-top: 20px;
+    padding-top: 45px;
 }
 
 .inside-form {

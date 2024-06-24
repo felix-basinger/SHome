@@ -50,11 +50,11 @@ body {
 
 
 .projects-header-main {
-    background-image: url('../static/img/JUNGLE panel 6.jpg');
+    background-image: url('../static/IMG_7017.JPG');
     width: 100vw;
     height: 40vh;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     background-size: cover;
 }
 
@@ -279,7 +279,7 @@ body {
 
 
 .email-form {
-    padding-top: 20px;
+    padding-top: 45px;
 }
 
 .inside-form {
