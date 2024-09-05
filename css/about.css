@@ -16,7 +16,23 @@ body {
     justify-content: space-between;
     align-items: center;
     z-index: 10;
+    transition: transform 0.5s cubic-bezier(0, 0, 0.27, 0);
 }
+
+.hidden {
+    transform: translateY(-150%);
+}
+
+.logo-header {
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+ 
+}
+
+.visible {
+    transform: translateY(0); /* Возвращаем хэдер на место */
+  }
 
 .header a img {
     width: 48px;
@@ -49,7 +65,7 @@ body {
 
 
 .projects-header-main {
-    background-image: url('../static/IMG_7007.JPG');
+    background-image: url('../static/img/IMG_0041 3.JPG');
     width: 100vw;
     height: 40vh;
     background-repeat: no-repeat;
@@ -57,21 +73,35 @@ body {
     background-size: cover;
 }
 
+.logo-head-png {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.logo-head-png img {
+    padding-top: 80px;
+    width: 50px;
+    height: auto;
+}
+
 .projects-header-main .projects-head-text {
     color: black;
-    padding-top: 110px;
-    width: 450px;
+    padding-top: 10px;
+    width: 100%;
+    max-width: 850px;
     margin: 0 auto;
     text-align: center;
 }
 
 .projects-header-main .projects-head-text .projects-head {
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 500;
 }
 
 .projects-header-main .projects-head-text .projects-par {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 500;
 }
 
@@ -85,17 +115,22 @@ body {
     max-width: 1440px;
     margin: 0 auto;
     justify-content: center;
-    gap: 70px;
-    padding: 20px 0;
+    align-items: center;
+    gap: 60px;
+    padding: 30px 60px;
+
 }
 
 .about-photo {
-    padding: 30px 0;
+    /* padding-top: 30px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .about-photo img {
-    width: 400px;
-    height: 600px;
+    width: 480px;
+    height: auto;
     object-fit: cover;
 }
 
@@ -104,7 +139,7 @@ body {
 }
 
 .about-text-head {
-    padding-top: 20px;
+    /* padding-top: 20px; */
     padding-bottom: 10px;
 }
 
@@ -142,8 +177,8 @@ body {
 }
 
 .princip-text {
-    padding: 65px 0;
-    max-width: 1320px;
+    padding: 60px 60px;
+    max-width: 1440px;
     margin: 0 auto;
     text-align: justify;
 }
@@ -154,16 +189,24 @@ body {
 
 .how-we-work {
     background-color: #C2B4A6;
+    width: 100%;
+    max-width: 1440px;
+    padding: 60px;
+    padding-top: 0px;
 }
 
 .how-we-work-2 {
-    background-image: url("../static/IMG_6913.JPG");
+    background-image: url("../static/img/drawing.jpg");
     background-repeat: no-repeat;
     background-position: top;
-    background-size: 1320px;
-    background-color: #C2B4A6;
-    height: 950px;
+    background-size: 100%;
     max-width: 1440px;
+    padding: 90px;
+    background-color: #C2B4A6;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
  
     /* box-shadow: inset 0px 0px 20px 450px rgba(0,0,0,0.7); */
@@ -171,22 +214,20 @@ body {
 }
 
 .how-we-work-info {
-    padding-bottom: 50px;
-    max-width: 1440px;
-    float: right;
-    padding-right: 120px;
-    padding-left: 630px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 70px 0px;
+    box-shadow: inset 0px 0px 20px 450px rgba(194, 180, 166, 0.7);
 
 }
 
 .how-we-work-header {
-    padding-top: 90px;
+    padding-top: 0px;
     max-width: 330px;
     margin: 0 auto;
 }
 
 .how-we-work-header h1{
-    padding-top: 40px;
     font-size: 40px;
     color: black;
      
@@ -194,7 +235,8 @@ body {
 
 
 .how-we-work-all {
-    padding: 50px 0;
+    padding: 50px 70px;
+    padding-bottom: 0px;
     max-width: 1300px;
     color: black;
     font-size: 20px;

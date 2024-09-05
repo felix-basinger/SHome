@@ -29,7 +29,23 @@ ul, ul li {
     justify-content: space-between;
     align-items: center;
     z-index: 10;
+    transition: transform 0.5s cubic-bezier(0, 0, 0.27, 0);
 }
+
+.logo-header {
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+ 
+}
+
+.hidden {
+    transform: translateY(-150%);
+}
+
+.visible {
+    transform: translateY(0); /* Возвращаем хэдер на место */
+  }
 
 .header a img {
     width: 48px;
@@ -64,30 +80,47 @@ ul, ul li {
 
 .header-row {
     color: black;
-    display: flex;
-    justify-content: center;
-    background-image: url("../static/IMG_7007 (1).JPG");
+    
+    background-image: url("../static/img/IMG_0041 3.jpg");
+    width: 100vw;
+    height: 40vh;
     background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 85px;
 }
 
+.logo-head-png {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.logo-head-png img {
+    padding-top: 80px;
+    width: 50px;
+    height: auto;
+}
+
 .header-content {
-    margin-top: 110px;
+    margin: 0 auto;
+    padding-top: 10px;
     max-width: 620px;
     text-align: justify;
     font-size: 16px;
 }
 
 .header-content p {
-    font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 22px;
 }
 
 .header-heading {
     display: flex;
     justify-content: center;
     font-weight: 600;
-    font-size: 60px;
+    font-size: 50px;
 }
 
 .images-text {
@@ -101,11 +134,13 @@ ul, ul li {
 .rectangle {
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, .5);
     margin-top: 100px;
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     height: 400px;
     /* border: 2px solid; */
     color: black;
     display: flex;
+    align-items: center;
 }
 
 
@@ -120,10 +155,8 @@ ul, ul li {
 }
 
 .header-in-rec {
-    text-align: center;
     font-size: 35px;
-    padding-top: 25px;
-    padding-bottom: 15px;
+    padding-bottom: 25px;
     color: #ffffff;
     font-weight: 600;
     text-shadow: #000 0px 0px 3px;
@@ -134,10 +167,9 @@ ul, ul li {
 }
 
 .rec-list {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     padding-top: 0px;
-    padding-bottom: 10px;
 }
 
 .rec-text-2 {
@@ -198,6 +230,7 @@ li {
 .slider-img {
     width: 480px;
     height: 400px;
+    object-fit: cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -243,6 +276,7 @@ li {
     width: 480px;
     height: 400px;
     position: absolute;
+    object-fit: cover;
     top: 0;
     left: 0;
     opacity: 0;
@@ -283,6 +317,7 @@ li {
     width: 480px;
     height: 400px;
     position: absolute;
+    object-fit: cover;
     top: 0;
     left: 0;
     opacity: 0;
