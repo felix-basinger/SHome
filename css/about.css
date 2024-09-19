@@ -134,10 +134,6 @@ body {
     object-fit: cover;
 }
 
-.about-text {
-     
-}
-
 .about-text-head {
     /* padding-top: 20px; */
     padding-bottom: 10px;
@@ -190,7 +186,6 @@ body {
 .how-we-work {
     background-color: #C2B4A6;
     width: 100%;
-    max-width: 1440px;
     padding: 60px;
     padding-top: 0px;
 }
@@ -208,7 +203,6 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
- 
     /* box-shadow: inset 0px 0px 20px 450px rgba(0,0,0,0.7); */
 
 }
@@ -230,7 +224,6 @@ body {
 .how-we-work-header h1{
     font-size: 40px;
     color: black;
-     
 }
 
 

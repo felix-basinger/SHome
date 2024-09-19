@@ -198,7 +198,6 @@ show4(imageIndex4);
 show5(imageIndex5);
 show6(imageIndex6);
 
-
 // const nav = document.querySelector('#nav');
 // const navBtn = document.querySelector('#nav-btn');
 // const navBtnImg = document.querySelector('#nav-btn-img');

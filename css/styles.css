@@ -192,6 +192,8 @@ body {
 }
 
 .wrapper-about-us .chairs img {
+    width: 100%;
+    max-width: 1284px;
     display: block;
     margin: 0 auto;
 }
@@ -244,8 +246,9 @@ body {
 
 .wrapper .main-menu-info .main-menu-photo img{
     width: 465px;
-    height: auto;
+    height: 465px;
     display: block;
+    object-fit: cover;
     margin: 0 auto;
     transition: 0.3s;
     background: rgba(0, 0, 0, 0.5);
@@ -932,4 +935,6 @@ ul, ul li {
     top: 250px;
     right: 10px;
 }
+
+
 
